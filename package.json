@@ -1,0 +1,14 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "Tier Two SWAT Notes",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Brandon Lehman",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^3.0.11"
+  }
+}

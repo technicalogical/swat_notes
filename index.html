@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="notes.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ALPHA BRAVO SWAT</title>
+</head>
+<body>
+  <div id="app">
+    <h1>Tier 2 SWAT Notes</h1>
+    <p> Reason for Call: <textarea v-model="message" v-on:input="changeReason"></textarea></p>
+    <p>Resolution of Call: <textarea v-model="message" v-on:input="changeResolution"></textarea></p>
+    <p>Changes Outside of Scope:<textarea v-model="message" v-on:input="changeScope"></textarea></p>
+    <p>#SWAT</p>
+    <p>Reason: {{ reason }}</p>
+    <p>Resolution: {{ resolution }}</p>
+    <p>Changes outside of scope: {{ scope }}</p>
+  </div>
+</body>
+</html>
+
