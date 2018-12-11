@@ -36,12 +36,16 @@ data: {
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ALPHA BRAVO SWAT</title>
 </head>
+<header style="background-color: darkkhaki; width: 100%;"><img src="Swat-logo.png" width="200px" style="-webkit-app-region: drag"></header>
 <body>
   <div id="app">
-    <h1>Tier 2 SWAT Notes</h1>
-    <p> Reason for Call: <textarea v-model="reason" v-on:input="changeReason"></textarea></p>
-    <p>Resolution of Call: <textarea v-model="resolution" v-on:input="changeResolution"></textarea></p>
-    <p>Changes Outside of Scope:<textarea v-model="scope" v-on:input="changeScope"></textarea></p>
+    
+    <p> Reason for Call: </p>
+    <p><textarea v-model="reason" v-on:input="changeReason" rows="3"></textarea></p>
+    <p>Resolution of Call:</p>
+    <p><textarea v-model="resolution" v-on:input="changeResolution" rows="3"></textarea></p>
+    <p>Changes Outside of Scope:</p>
+    <p><textarea v-model="scope" v-on:input="changeScope" rows="3"></textarea></p>
     <p>#SWAT</p>
     <p>Reason: {{ reason }}</p>
     <p>Resolution: {{ resolution }}</p>

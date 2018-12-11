@@ -5,7 +5,7 @@ const url = require('url');
 let win;
 
 function createWindow(){
-  win= new BrowserWindow({width:400, height:600, icon:__dirname+'Swat-logo.png'});
+  win= new BrowserWindow({width:400, height:600, icon:'Swat-logo.png', frame: false});
 
   win.setMenu(null);
 
