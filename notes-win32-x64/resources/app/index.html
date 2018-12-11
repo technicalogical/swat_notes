@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="notes.js"></script>
+  <script type="text/javascript">
+
+
+    window.onload=function(){
+      
+new Vue({
+el: '#app',
+data: {
+  reason: ' ',
+  resolution: ' ',
+  scope: ' '
+  },
+ methods: {
+  changeReason: function(event){
+  	this.reason = event.target.value;
+  },
+ 	changeResolution: function(event){
+  	this.resolution = event.target.value;
+ },
+ changeScope: function(event){
+  	this.scope = event.target.value;
+	}
+}
+});
+
+    }
+
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ALPHA BRAVO SWAT</title>
+</head>
+<body>
+  <div id="app">
+    <h1>Tier 2 SWAT Notes</h1>
+    <p> Reason for Call: <textarea v-model="reason" v-on:input="changeReason"></textarea></p>
+    <p>Resolution of Call: <textarea v-model="resolution" v-on:input="changeResolution"></textarea></p>
+    <p>Changes Outside of Scope:<textarea v-model="scope" v-on:input="changeScope"></textarea></p>
+    <p>#SWAT</p>
+    <p>Reason: {{ reason }}</p>
+    <p>Resolution: {{ resolution }}</p>
+    <p>Changes outside of scope: {{ scope }}</p>
+  </div>
+</body>
+</html>
+
