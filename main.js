@@ -7,8 +7,9 @@ let win;
 function createWindow(){
   win= new BrowserWindow({width:400, height:600, icon:__dirname+'Swat-logo.png'});
 
+  win.setMenu(null);
 
-win.loadURL(url.format({
+  win.loadURL(url.format({
   pathname: path.join(__dirname, 'index.html'),
   protocol: 'file:',
   slashes: true
@@ -21,6 +22,7 @@ win.on('closed', () => {
   win = null;
   });
 }
+
 
 app.on('ready', createWindow);
 
