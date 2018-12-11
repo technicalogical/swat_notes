@@ -5,7 +5,7 @@ const url = require('url');
 let win;
 
 function createWindow(){
-  win= new BrowserWindow({width:800, height:600, icon:__dirname+'Swat-logo.png'});
+  win= new BrowserWindow({width:400, height:600, icon:__dirname+'Swat-logo.png'});
 
 
 win.loadURL(url.format({
@@ -15,7 +15,7 @@ win.loadURL(url.format({
   }));
 
 //Open devtools
-win.webContents.openDevTools();
+//win.webContents.openDevTools();
 
 win.on('closed', () => {
   win = null;
@@ -33,4 +33,3 @@ app.on('ready', createWindow);
     }
   });
 
-  
